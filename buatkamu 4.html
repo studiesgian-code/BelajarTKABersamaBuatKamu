@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Buat Kamu - Sukses TKA</title>
+
+  <!-- Template  : Scholar - Online School HTML5 Template        -->
+  <!-- Author    : TemplateMo                                     -->
+  <!-- URL       : https://templatemo.com/tm-586-scholar          -->
+  <!-- License   : Free to use for commercial/personal purposes   -->
+  <!-- Modified  : Hanya ganti teks, warna, dan gambar            -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===================================================
+       CSS ASLI SCHOLAR — hanya warna primer diganti biru
+       #fe6a00 (oranye Scholar) → #0077B6 (biru Buat Kamu)
+       #004366 (biru tua Scholar) → #023E8A
+    =================================================== */
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-color: #ffffff;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: none; }
+
+    /* ----- NAVBAR ----- */
+    .tm-navbar {
+      background-color: #023E8A;
+      padding: 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .tm-navbar .navbar-brand {
+      color: #ffffff;
+      font-size: 1.5rem;
+      font-weight: 800;
+      padding: 12px 0;
+    }
+
+    .tm-navbar .navbar-brand span { color: #FFD166; }
+
+    .tm-navbar .nav-link {
+      color: rgba(255,255,255,0.85) !important;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 18px 15px !important;
+      transition: color 0.2s;
+    }
+
+    .tm-navbar .nav-link:hover,
+    .tm-navbar .nav-link.active {
+      color: #FFD166 !important;
+    }
+
+    .tm-navbar .navbar-toggler {
+      border-color: rgba(255,255,255,0.4);
+    }
+
+    .tm-navbar .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.9)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    /* ----- HERO / SLIDER (Scholar: carousel) ----- */
+    #tm-hero {
+      background: linear-gradient(135deg, #023E8A 0%, #0077B6 100%);
+      padding: 70px 0;
+    }
+
+    #tm-hero .hero-text-col { padding: 20px 0; }
+
+    #tm-hero h6 {
+      color: #FFD166;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    #tm-hero h2 {
+      color: #ffffff;
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+
+    #tm-hero p {
+      color: rgba(255,255,255,0.8);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .tm-btn-primary {
+      background-color: #FFD166;
+      color: #023E8A;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 10px 28px;
+      border: none;
+      border-radius: 4px;
+      display: inline-block;
+      transition: background 0.2s;
+    }
+
+    .tm-btn-primary:hover {
+      background-color: #ffc107;
+      color: #023E8A;
+    }
+
+    .tm-btn-secondary {
+      background-color: transparent;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 10px 28px;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 4px;
+      display: inline-block;
+      margin-left: 12px;
+      transition: border-color 0.2s;
+    }
+
+    .tm-btn-secondary:hover { border-color: #fff; color: #fff; }
+
+    #tm-hero img {
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+
+    /* ----- SECTION COMMON ----- */
+    .tm-section { padding: 70px 0; }
+    .tm-section-gray { padding: 70px 0; background-color: #f8f9fa; }
+
+    .tm-section-title-box { margin-bottom: 45px; }
+
+    .tm-section-title-box p {
+      color: #0077B6;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .tm-section-title-box h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #222222;
+      line-height: 1.2;
+    }
+
+    .tm-section-title-box h2 span { color: #0077B6; }
+
+    .tm-section-title-box .tm-divider {
+      width: 40px;
+      height: 3px;
+      background-color: #0077B6;
+      margin-top: 14px;
+    }
+
+    .tm-section-title-box .tm-divider.center { margin: 14px auto 0; }
+
+    /* ----- SERVICES ----- */
+    .tm-service-item { padding: 20px; text-align: center; }
+
+    .tm-service-item img {
+      height: 70px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    .tm-service-item h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 12px;
+    }
+
+    .tm-service-item p {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+
+    .tm-service-item a {
+      color: #0077B6;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .tm-service-item a:hover { text-decoration: underline; }
+
+    /* ----- ABOUT / ACCORDION ----- */
+    #tm-about { background-color: #e8f4fd; }
+
+    #tm-about img { border-radius: 6px; width: 100%; }
+
+    .tm-about-text p {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.75;
+      margin-bottom: 24px;
+    }
+
+    .accordion-button {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #222;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: #0077B6;
+      background-color: #dbeafe;
+      box-shadow: none;
+    }
+
+    .accordion-body {
+      font-size: 0.88rem;
+      color: #666;
+      line-height: 1.75;
+    }
+
+    /* ----- COURSES ----- */
+    .tm-filter-btn {
+      background: #fff;
+      border: 1px solid #dee2e6;
+      color: #555;
+      border-radius: 4px;
+      padding: 6px 18px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin: 3px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .tm-filter-btn.active,
+    .tm-filter-btn:hover {
+      background: #0077B6;
+      color: #fff;
+      border-color: #0077B6;
+    }
+
+    .tm-course-item {
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+      height: 100%;
+      transition: box-shadow 0.2s;
+    }
+
+    .tm-course-item:hover { box-shadow: 0 4px 18px rgba(0,0,0,0.1); }
+
+    .tm-course-item img { width: 100%; height: 170px; object-fit: cover; }
+
+    .tm-course-body { padding: 16px; }
+
+    .tm-course-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #fff;
+      background: #0077B6;
+      border-radius: 3px;
+      padding: 2px 10px;
+      margin-bottom: 8px;
+    }
+
+    .tm-course-tag.eng  { background: #065F46; }
+    .tm-course-tag.math { background: #6d28d9; }
+    .tm-course-tag.sci  { background: #b45309; }
+
+    .tm-course-body h5 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    .tm-course-meta {
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .tm-course-teacher { font-size: 0.85rem; font-weight: 700; color: #0077B6; }
+    .tm-course-price   { font-size: 0.95rem; font-weight: 800; color: #023E8A; }
+
+    /* ----- COUNTER ----- */
+    #tm-counter {
+      background: linear-gradient(135deg, #023E8A 0%, #0077B6 100%);
+      padding: 55px 0;
+    }
+
+    .tm-counter-item { text-align: center; color: #fff; }
+
+    .tm-counter-item .tm-count {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #FFD166;
+      line-height: 1;
+      display: block;
+    }
+
+    .tm-counter-item p {
+      font-size: 0.9rem;
+      opacity: 0.85;
+      font-weight: 600;
+      margin: 8px 0 0;
+    }
+
+    /* ----- TEAM ----- */
+    .tm-team-item {
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+      text-align: center;
+      transition: box-shadow 0.2s;
+      height: 100%;
+    }
+
+    .tm-team-item:hover { box-shadow: 0 4px 18px rgba(0,0,0,0.1); }
+
+    .tm-team-item img { width: 100%; height: 200px; object-fit: cover; }
+
+    .tm-team-body { padding: 16px; }
+
+    .tm-team-body span {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #0077B6;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tm-team-body h5 {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #222;
+      margin: 6px 0 12px;
+    }
+
+    .tm-social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px; height: 28px;
+      border: 1px solid #dee2e6;
+      border-radius: 50%;
+      color: #0077B6;
+      font-size: 0.75rem;
+      margin: 2px;
+      transition: all 0.2s;
+    }
+
+    .tm-social a:hover { background: #0077B6; color: #fff; border-color: #0077B6; }
+
+    /* ----- TESTIMONIALS ----- */
+    #tm-testimonials { background-color: #e8f4fd; }
+
+    .tm-testimonial-item {
+      background: #fff;
+      border-radius: 6px;
+      padding: 24px;
+      border: 1px solid #dee2e6;
+      height: 100%;
+    }
+
+    .tm-testimonial-item p {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.75;
+      font-style: italic;
+      margin-bottom: 18px;
+    }
+
+    .tm-testimonial-item img {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #0077B6;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+
+    .tm-testimonial-name { font-weight: 800; font-size: 0.9rem; color: #222; }
+    .tm-testimonial-role { font-size: 0.8rem; color: #888; }
+
+    /* ----- EVENTS ----- */
+    .tm-event-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 16px;
+      background: #fff;
+      margin-bottom: 14px;
+      transition: box-shadow 0.2s;
+    }
+
+    .tm-event-item:hover { box-shadow: 0 3px 14px rgba(0,0,0,0.08); }
+
+    .tm-event-item img {
+      width: 88px; height: 78px;
+      object-fit: cover;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .tm-event-info { flex: 1; }
+
+    .tm-event-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #0077B6;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tm-event-info h5 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #222;
+      margin: 4px 0 6px;
+    }
+
+    .tm-event-meta { font-size: 0.8rem; color: #888; }
+    .tm-event-meta span { margin-right: 12px; }
+
+    .tm-btn-event {
+      background: #0077B6;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 7px 16px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+      align-self: center;
+      flex-shrink: 0;
+      display: inline-block;
+    }
+
+    .tm-btn-event:hover { background: #023E8A; color: #fff; }
+
+    .tm-promo-box {
+      background: #023E8A;
+      border-radius: 6px;
+      padding: 30px 24px;
+      text-align: center;
+      color: #fff;
+      height: 100%;
+    }
+
+    .tm-promo-box .promo-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #FFD166;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .tm-promo-box .promo-num {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: #FFD166;
+      line-height: 1;
+    }
+
+    .tm-promo-box .promo-off {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin: 4px 0 14px;
+    }
+
+    .tm-promo-box p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 6px;
+    }
+
+    .tm-promo-box .promo-date {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: #FFD166;
+      margin-bottom: 20px;
+    }
+
+    .tm-promo-box a {
+      display: block;
+      background: #FFD166;
+      color: #023E8A;
+      font-weight: 800;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+
+    .tm-promo-box a:hover { background: #ffc107; }
+
+    /* ----- CONTACT ----- */
+    #tm-contact { background-color: #f8f9fa; }
+
+    .tm-contact-info h5 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #222;
+      margin-bottom: 12px;
+    }
+
+    .tm-contact-info p {
+      font-size: 0.88rem;
+      color: #666;
+      line-height: 1.75;
+      margin-bottom: 18px;
+    }
+
+    .tm-contact-info ul { list-style: none; padding: 0; }
+
+    .tm-contact-info ul li {
+      font-size: 0.88rem;
+      color: #555;
+      margin-bottom: 10px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .tm-contact-info ul li i { color: #0077B6; width: 16px; margin-top: 2px; flex-shrink: 0; }
+
+    .tm-map { border-radius: 6px; overflow: hidden; border: 1px solid #dee2e6; margin-top: 20px; }
+    .tm-map iframe { display: block; width: 100%; height: 180px; border: none; }
+
+    .form-control, .form-select {
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      padding: 10px 14px;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .form-control:focus, .form-select:focus {
+      border-color: #0077B6;
+      box-shadow: 0 0 0 3px rgba(0,119,182,0.1);
+    }
+
+    .form-label { font-size: 0.85rem; font-weight: 700; color: #444; }
+
+    .tm-btn-submit {
+      background: #0077B6;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 11px 30px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .tm-btn-submit:hover { background: #023E8A; }
+
+    /* ----- FOOTER ----- */
+    #tm-footer {
+      background-color: #023E8A;
+      color: rgba(255,255,255,0.7);
+      padding: 50px 0 0;
+    }
+
+    #tm-footer h5 {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    #tm-footer p { font-size: 0.88rem; line-height: 1.75; }
+
+    .tm-footer-links { list-style: none; padding: 0; }
+
+    .tm-footer-links li { margin-bottom: 8px; }
+
+    .tm-footer-links a {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.65);
+      transition: color 0.2s;
+    }
+
+    .tm-footer-links a:hover { color: #FFD166; }
+
+    .tm-footer-social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px; height: 34px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      font-size: 0.9rem;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      transition: background 0.2s;
+    }
+
+    .tm-footer-social a:hover { background: #0077B6; }
+
+    .tm-footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 18px 0;
+      margin-top: 40px;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .tm-footer-bottom a { color: #FFD166; }
+    .tm-footer-bottom a:hover { color: #fff; }
+
+    /* ----- BACK TO TOP ----- */
+    #tm-back-top {
+      position: fixed;
+      bottom: 22px; right: 22px;
+      width: 38px; height: 38px;
+      background: #0077B6;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: none;
+      z-index: 999;
+    }
+
+    #tm-back-top:hover { background: #023E8A; }
+
+    /* responsive */
+    @media (max-width: 768px) {
+      #tm-hero h2 { font-size: 1.8rem; }
+      .tm-btn-secondary { margin-left: 0; margin-top: 10px; display: inline-block; }
+      .tm-event-item { flex-wrap: wrap; }
+    }
+
+    /* ----- LOGIN NAVBAR BUTTON ----- */
+    .nav-cta-btn {
+      background: #FFD166;
+      color: #023E8A !important;
+      font-weight: 800 !important;
+      font-size: 0.85rem;
+      padding: 7px 18px !important;
+      border-radius: 4px;
+      display: inline-block;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-cta-btn:hover {
+      background: #ffc107;
+      color: #023E8A !important;
+    }
+
+    .nav-user-info {
+      color: rgba(255,255,255,0.85);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-right: 8px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Back to top -->
+<button id="tm-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg tm-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#tm-hero">Buat<span>Kamu</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#tmNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="tmNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#tm-services">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tm-courses">Mapel</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tm-team">Tutor</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tm-events">Jadwal</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tm-contact">Kontak</a></li>
+      </ul>
+      <!-- area login/logout — diisi oleh welcome.js -->
+      <span id="userInfo" class="nav-user-info"></span>
+      <div id="authArea">
+        <a href="login/index.html" class="nav-cta-btn ms-2">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section id="tm-hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 hero-text-col mb-5 mb-lg-0">
+        <h6>Platform Belajar TKA untuk Kelas 9</h6>
+        <h2>Bersama Buat Kamu,<br>Sukses TKA Lebih Mudah</h2>
+        <p>Buat Kamu hadir untuk membantu siswa kelas 9 dalam mempersiapkan TKA. Tersedia materi lengkap, latihan soal, dan video pembelajaran dari YouTube untuk Bahasa Indonesia, Inggris, Matematika, dan IPA.</p>
+        <a href="#tm-courses" class="tm-btn-primary">Lihat Mata Pelajaran</a>
+        <a href="#tm-about" class="tm-btn-secondary">Tentang Kami</a>
+      </div>
+      <div class="col-lg-6">
+        <img src="https://picsum.photos/600/400?random=1" alt="Siswa belajar TKA" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section id="tm-services" class="tm-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="tm-section-title-box">
+          <p>Layanan Kami</p>
+          <h2>Kenapa Pilih <span>Buat Kamu?</span></h2>
+          <div class="tm-divider center"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="tm-service-item">
+          <img src="https://themewagon.github.io/scholar/assets/images/service-01.png" alt="Materi Lengkap" />
+          <h4>Materi Lengkap</h4>
+          <p>Materi TKA 4 mata pelajaran tersedia lengkap dan terstruktur, mulai dari dasar hingga tingkat lanjut sesuai kisi-kisi terbaru.</p>
+          <a href="#tm-courses">Lihat Materi &rarr;</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="tm-service-item">
+          <img src="https://themewagon.github.io/scholar/assets/images/service-02.png" alt="Latihan Soal" />
+          <h4>Latihan Soal</h4>
+          <p>Ratusan latihan soal dan tryout mingguan dengan pembahasan detail. Latihan intensif agar terbiasa dengan format soal TKA asli.</p>
+          <a href="#tm-courses">Coba Latihan &rarr;</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="tm-service-item">
+          <img src="https://themewagon.github.io/scholar/assets/images/service-03.png" alt="Video Belajar" />
+          <h4>Video Pembelajaran</h4>
+          <p>Ratusan video belajar dikurasi dari channel YouTube terbaik. Belajar kapan saja dan di mana saja dengan cara yang menyenangkan.</p>
+          <a href="#tm-events">Tonton Video &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="tm-about">
+  <div class="container">
+    <div class="row align-items-center g-5" style="padding: 70px 0;">
+      <div class="col-lg-6">
+        <img src="https://picsum.photos/560/420?random=2" alt="Tentang Buat Kamu" />
+      </div>
+      <div class="col-lg-6 tm-about-text">
+        <div class="tm-section-title-box" style="text-align:left">
+          <p>Tentang Kami</p>
+          <h2>Apa yang membuat <span>Buat Kamu</span> berbeda?</h2>
+          <div class="tm-divider"></div>
+        </div>
+        <p>Buat Kamu adalah lembaga belajar yang fokus membantu siswa kelas 9 menghadapi TKA. Kami menyediakan materi, soal latihan, dan video yang dikurasi agar belajar tetap efektif dan menyenangkan.</p>
+        <div class="accordion" id="aboutAccordion">
+          <div class="accordion-item border mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc1">
+                Bagaimana cara belajar di Buat Kamu?
+              </button>
+            </h2>
+            <div id="acc1" class="accordion-collapse collapse show" data-bs-parent="#aboutAccordion">
+              <div class="accordion-body">
+                Daftar gratis, lalu akses materi dan latihan soal sesuai mata pelajaran yang dibutuhkan. Belajar bisa mandiri atau dengan bimbingan tutor kami.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc2">
+                Apakah tersedia untuk semua daerah?
+              </button>
+            </h2>
+            <div id="acc2" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+              <div class="accordion-body">
+                Ya! Buat Kamu 100% online sehingga bisa diakses siswa dari seluruh Indonesia. Kami berbasis di Yogyakarta dan melayani secara digital.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc3">
+                Apakah ada jaminan lulus TKA?
+              </button>
+            </h2>
+            <div id="acc3" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+              <div class="accordion-body">
+                Paket Premium dilengkapi garansi nilai meningkat. Jika tidak ada peningkatan setelah mengikuti seluruh program, uang kembali 100%.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc4">
+                Apakah ada dukungan dari tutor?
+              </button>
+            </h2>
+            <div id="acc4" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+              <div class="accordion-body">
+                Tentu! Tutor kami siap membantu via chat dan sesi konsultasi, tergantung paket yang dipilih.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COURSES ===================== -->
+<section id="tm-courses" class="tm-section-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="tm-section-title-box">
+          <p>Mata Pelajaran</p>
+          <h2>Materi <span>TKA Kelas 9</span></h2>
+          <div class="tm-divider center"></div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mb-4">
+      <button class="tm-filter-btn active" data-filter="all">Semua</button>
+      <button class="tm-filter-btn" data-filter="indo">Bahasa Indonesia</button>
+      <button class="tm-filter-btn" data-filter="eng">Bahasa Inggris</button>
+      <button class="tm-filter-btn" data-filter="math">Matematika</button>
+      <button class="tm-filter-btn" data-filter="sci">IPA</button>
+    </div>
+    <div class="row g-4" id="coursesGrid">
+      <div class="col-sm-6 col-lg-4 course-item" data-cat="indo">
+        <div class="tm-course-item">
+          <img src="https://picsum.photos/400/170?random=11" alt="Bahasa Indonesia" />
+          <div class="tm-course-body">
+            <span class="tm-course-tag">Bahasa Indonesia</span>
+            <h5>Teks Eksposisi & Kaidah Kebahasaan</h5>
+            <div class="tm-course-meta">120 soal &nbsp;·&nbsp; 8 jam belajar</div>
+            <div class="d-flex justify-content-between">
+              <span class="tm-course-teacher">Ibu Rina Savitri</span>
+              <span class="tm-course-price">Gratis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 course-item" data-cat="indo">
+        <div class="tm-course-item">
+          <img src="https://picsum.photos/400/170?random=12" alt="Bahasa Indonesia 2" />
+          <div class="tm-course-body">
+            <span class="tm-course-tag">Bahasa Indonesia</span>
+            <h5>Cerpen, Puisi & Sastra Indonesia</h5>
+            <div class="tm-course-meta">90 soal &nbsp;·&nbsp; 6 jam belajar</div>
+            <div class="d-flex justify-content-between">
+              <span class="tm-course-teacher">Ibu Rina Savitri</span>
+              <span class="tm-course-price">Rp 49.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 course-item" data-cat="eng">
+        <div class="tm-course-item">
+          <img src="https://picsum.photos/400/170?random=13" alt="Bahasa Inggris" />
+          <div class="tm-course-body">
+            <span class="tm-course-tag eng">Bahasa Inggris</span>
+            <h5>Master Tenses & Grammar TKA</h5>
+            <div class="tm-course-meta">100 soal &nbsp;·&nbsp; 7 jam belajar</div>
+            <div class="d-flex justify-content-between">
+              <span class="tm-course-teacher">Pak Dimas Aditya</span>
+              <span class="tm-course-price">Gratis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 course-item" data-cat="eng">
+        <div class="tm-course-item">
+          <img src="https://picsum.photos/400/170?random=14" alt="Bahasa Inggris 2" />
+          <div class="tm-course-body">
+            <span class="tm-course-tag eng">Bahasa Inggris</span>
+            <h5>Reading Comprehension & Vocabulary</h5>
+            <div class="tm-course-meta">80 soal &nbsp;·&nbsp; 5 jam belajar</div>
+            <div class="d-flex justify-content-between">
+              <span class="tm-course-teacher">Pak Dimas Aditya</span>
+              <span class="tm-course-price">Rp 49.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 course-item" data-cat="math">
+        <div class="tm-course-item">
+          <img src="https://picsum.photos/400/170?random=15" alt="Matematika" />
+          <div class="tm-course-body">
+            <span class="tm-course-tag math">Matematika</span>
+            <h5>Aljabar & Persamaan Linear</h5>
+            <div class="tm-course-meta">150 soal &nbsp;·&nbsp; 10 jam belajar</div>
+            <div class="d-flex justify-content-between">
+              <span class="tm-course-teacher">Ibu Sari Permata</span>
+              <span class="tm-course-price">Gratis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 course-item" data-cat="sci">
+        <div class="tm-course-item">
+          <img src="https://picsum.photos/400/170?random=16" alt="IPA" />
+          <div class="tm-course-body">
+            <span class="tm-course-tag sci">IPA</span>
+            <h5>Sistem Koordinasi & Biologi Kelas 9</h5>
+            <div class="tm-course-meta">130 soal &nbsp;·&nbsp; 9 jam belajar</div>
+            <div class="d-flex justify-content-between">
+              <span class="tm-course-teacher">Pak Reza Kusuma</span>
+              <span class="tm-course-price">Gratis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COUNTER ===================== -->
+<section id="tm-counter">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-3">
+        <div class="tm-counter-item">
+          <span class="tm-count" data-count="2500">0</span>
+          <p>Siswa Aktif</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="tm-counter-item">
+          <span class="tm-count" data-count="850">0</span>
+          <p>Bank Soal</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="tm-counter-item">
+          <span class="tm-count" data-count="120">0</span>
+          <p>Video Pembelajaran</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="tm-counter-item">
+          <span class="tm-count" data-count="98">0</span>
+          <p>% Siswa Lulus TKA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TEAM ===================== -->
+<section id="tm-team" class="tm-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="tm-section-title-box">
+          <p>Tim Pengajar</p>
+          <h2>Tutor <span>Buat Kamu</span></h2>
+          <div class="tm-divider center"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3">
+        <div class="tm-team-item">
+          <img src="https://themewagon.github.io/scholar/assets/images/member-01.jpg" alt="Ibu Rina" />
+          <div class="tm-team-body">
+            <span>Bahasa Indonesia</span>
+            <h5>Ibu Rina Savitri</h5>
+            <div class="tm-social">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="tm-team-item">
+          <img src="https://themewagon.github.io/scholar/assets/images/member-02.jpg" alt="Pak Dimas" />
+          <div class="tm-team-body">
+            <span>Bahasa Inggris</span>
+            <h5>Pak Dimas Aditya</h5>
+            <div class="tm-social">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="tm-team-item">
+          <img src="https://themewagon.github.io/scholar/assets/images/member-03.jpg" alt="Ibu Sari" />
+          <div class="tm-team-body">
+            <span>Matematika</span>
+            <h5>Ibu Sari Permata</h5>
+            <div class="tm-social">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="tm-team-item">
+          <img src="https://themewagon.github.io/scholar/assets/images/member-04.jpg" alt="Pak Reza" />
+          <div class="tm-team-body">
+            <span>IPA</span>
+            <h5>Pak Reza Kusuma</h5>
+            <div class="tm-social">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section id="tm-testimonials">
+  <div class="container">
+    <div class="row align-items-center g-5" style="padding: 70px 0;">
+      <div class="col-lg-5">
+        <div class="tm-section-title-box" style="text-align:left">
+          <p>Testimoni</p>
+          <h2>Kata mereka tentang <span>Buat Kamu</span></h2>
+          <div class="tm-divider"></div>
+        </div>
+        <p style="font-size:0.9rem;color:#555;line-height:1.75">Ribuan siswa kelas 9 sudah merasakan manfaat belajar bersama Buat Kamu dan berhasil menghadapi TKA dengan percaya diri.</p>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-12">
+            <div class="tm-testimonial-item">
+              <p>"Awalnya aku panik banget soal TKA Matematika. Tapi setelah 2 bulan belajar di Buat Kamu, aku jadi jauh lebih percaya diri. Soal-soalnya mirip banget sama TKA asli!"</p>
+              <div class="d-flex align-items-center">
+                <img src="https://themewagon.github.io/scholar/assets/images/testimonial-author.jpg" alt="Rizky" />
+                <div>
+                  <div class="tm-testimonial-name">Rizky Pratama</div>
+                  <div class="tm-testimonial-role">Siswa Kelas 9 – SMP N 2 Yogyakarta</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="tm-testimonial-item">
+              <p>"Nilai Bahasa Inggris aku naik dari 65 ke 88 dalam sebulan. Video pembelajaran-nya sangat membantu!"</p>
+              <div class="d-flex align-items-center">
+                <img src="https://themewagon.github.io/scholar/assets/images/testimonial-author.jpg" alt="Sari" />
+                <div>
+                  <div class="tm-testimonial-name">Sari Dewi R.</div>
+                  <div class="tm-testimonial-role">SMP Muh. 3 Yogyakarta</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="tm-testimonial-item">
+              <p>"Tryout mingguan di Buat Kamu benar-benar mempersiapkan aku. Pembahasannya detail dan mudah dipahami."</p>
+              <div class="d-flex align-items-center">
+                <img src="https://themewagon.github.io/scholar/assets/images/testimonial-author.jpg" alt="Aldi" />
+                <div>
+                  <div class="tm-testimonial-name">Aldi Nugroho</div>
+                  <div class="tm-testimonial-role">SMP N 5 Yogyakarta</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EVENTS ===================== -->
+<section id="tm-events" class="tm-section-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="tm-section-title-box">
+          <p>Jadwal & Kegiatan</p>
+          <h2>Tryout & <span>Info TKA</span></h2>
+          <div class="tm-divider center"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="tm-event-item">
+          <img src="https://themewagon.github.io/scholar/assets/images/event-01.jpg" alt="Tryout" />
+          <div class="tm-event-info">
+            <div class="tm-event-tag">Tryout</div>
+            <h5>Simulasi TKA Mingguan – Semua Mapel</h5>
+            <div class="tm-event-meta">
+              <span>Setiap Minggu</span>
+              <span>120 menit</span>
+              <span>Gratis (Paket Intensif)</span>
+            </div>
+          </div>
+          <a href="#tm-contact" class="tm-btn-event">Daftar</a>
+        </div>
+        <div class="tm-event-item">
+          <img src="https://themewagon.github.io/scholar/assets/images/event-02.jpg" alt="Webinar" />
+          <div class="tm-event-info">
+            <div class="tm-event-tag">Webinar</div>
+            <h5>Tips & Trik Menghadapi TKA – Live Bersama Tutor</h5>
+            <div class="tm-event-meta">
+              <span>25 Mei 2025</span>
+              <span>90 menit</span>
+              <span>Gratis</span>
+            </div>
+          </div>
+          <a href="#tm-contact" class="tm-btn-event">Daftar</a>
+        </div>
+        <div class="tm-event-item">
+          <img src="https://themewagon.github.io/scholar/assets/images/event-03.jpg" alt="Program Intensif" />
+          <div class="tm-event-info">
+            <div class="tm-event-tag">Program Intensif</div>
+            <h5>Belajar Intensif TKA 30 Hari – Semua Mapel</h5>
+            <div class="tm-event-meta">
+              <span>1 Juni 2025</span>
+              <span>30 hari</span>
+              <span>Rp 149.000</span>
+            </div>
+          </div>
+          <a href="#tm-contact" class="tm-btn-event">Daftar</a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="tm-promo-box">
+          <div class="promo-label">Penawaran Spesial</div>
+          <div class="promo-num">50%</div>
+          <div class="promo-off">OFF</div>
+          <p>Daftar Paket Intensif sebelum:</p>
+          <div class="promo-date">31 Mei 2025</div>
+          <a href="#tm-contact">Klaim Diskon Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="tm-contact" class="tm-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="tm-section-title-box">
+          <p>Hubungi Kami</p>
+          <h2>Kirim Pesan <span>ke Buat Kamu</span></h2>
+          <div class="tm-divider center"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <div class="tm-contact-info">
+          <h5>Info Lembaga Buat Kamu</h5>
+          <p>Tim kami siap membantu kamu Senin–Jumat pukul 08.00–17.00 WIB.</p>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Jl. Cendrawasih No. 12, Condongcatur, Sleman, Yogyakarta</li>
+            <li><i class="fab fa-whatsapp"></i> +62 812-3456-7890</li>
+            <li><i class="fas fa-envelope"></i> halo@buatkamu.id</li>
+            <li><i class="fas fa-clock"></i> Senin–Jumat: 08.00–17.00 WIB</li>
+          </ul>
+          <div class="tm-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.7!2d110.3905!3d-7.7520!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59c0a1231a55%3A0x1!2sYogyakarta!5e0!3m2!1sid!2sid!4v1"
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokasi Buat Kamu">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <form id="tmContactForm" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label class="form-label" for="tmName">Nama Lengkap</label>
+              <input type="text" class="form-control" id="tmName" placeholder="Nama kamu" required />
+              <div class="invalid-feedback">Nama tidak boleh kosong.</div>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label" for="tmEmail">Email</label>
+              <input type="email" class="form-control" id="tmEmail" placeholder="email@kamu.com" required />
+              <div class="invalid-feedback">Masukkan email yang valid.</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="tmSubject">Topik</label>
+              <select class="form-select" id="tmSubject" required>
+                <option value="">-- Pilih Topik --</option>
+                <option>Info Harga &amp; Paket</option>
+                <option>Teknis &amp; Penggunaan</option>
+                <option>Kerjasama Sekolah</option>
+                <option>Lainnya</option>
+              </select>
+              <div class="invalid-feedback">Pilih topik terlebih dahulu.</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="tmMsg">Pesan</label>
+              <textarea class="form-control" id="tmMsg" rows="5" placeholder="Tuliskan pesanmu di sini..." required></textarea>
+              <div class="invalid-feedback">Pesan tidak boleh kosong.</div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="tm-btn-submit">Kirim Pesan</button>
+            </div>
+            <div class="col-12">
+              <div id="tmFormOk" class="alert alert-success mt-1" style="display:none; font-size:0.9rem; font-weight:700;">
+                ✅ Pesan berhasil dikirim! Kami akan membalas dalam 1×24 jam.
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer id="tm-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5>BuatKamu</h5>
+        <p>Platform belajar TKA untuk siswa kelas 9. Materi, latihan soal, dan video pembelajaran Bahasa Indonesia, Inggris, Matematika, dan IPA.</p>
+        <div class="tm-footer-social mt-3">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Mata Pelajaran</h5>
+        <ul class="tm-footer-links">
+          <li><a href="#tm-courses">Bahasa Indonesia</a></li>
+          <li><a href="#tm-courses">Bahasa Inggris</a></li>
+          <li><a href="#tm-courses">Matematika</a></li>
+          <li><a href="#tm-courses">IPA</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Informasi</h5>
+        <ul class="tm-footer-links">
+          <li><a href="#tm-about">Tentang Kami</a></li>
+          <li><a href="#tm-team">Tim Tutor</a></li>
+          <li><a href="#tm-events">Jadwal</a></li>
+          <li><a href="#tm-contact">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Newsletter</h5>
+        <p>Dapatkan info TKA terbaru langsung di email kamu.</p>
+        <div class="d-flex mt-3">
+          <input type="email" id="tmNlEmail" class="form-control" placeholder="Email kamu..." style="border-radius:4px 0 0 4px;" />
+          <button id="tmNlBtn" style="background:#0077B6;color:#fff;border:none;padding:0 18px;border-radius:0 4px 4px 0;font-weight:700;font-size:0.85rem;cursor:pointer;white-space:nowrap;">
+            Daftar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="tm-footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+      <span>
+        Copyright &copy; 2025 Buat Kamu &nbsp;|&nbsp;
+        Design: <a href="https://templatemo.com/tm-586-scholar" target="_blank" rel="noopener">Scholar &ndash; TemplateMo</a>
+        &nbsp;|&nbsp;
+        Distribution: <a href="https://themewagon.com" target="_blank" rel="noopener">ThemeWagon</a>
+      </span>
+      <span>
+        <a href="#">Privasi</a> &nbsp;&middot;&nbsp; <a href="#">Syarat &amp; Ketentuan</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="welcome.js"></script>
+<script>
+  /* Back to top */
+  const btt = document.getElementById('tm-back-top');
+  window.addEventListener('scroll', () => {
+    btt.style.display = window.scrollY > 400 ? 'block' : 'none';
+  });
+
+  /* Course filter */
+  document.querySelectorAll('.tm-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tm-filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      document.querySelectorAll('.course-item').forEach(item => {
+        item.style.display = (f === 'all' || item.dataset.cat === f) ? '' : 'none';
+      });
+    });
+  });
+
+  /* Counter */
+  const cObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.querySelectorAll('.tm-count').forEach(el => {
+        if (el.dataset.done) return;
+        el.dataset.done = '1';
+        const target = +el.dataset.count, step = target / 60;
+        let cur = 0;
+        const t = setInterval(() => {
+          cur = Math.min(cur + step, target);
+          el.textContent = Math.floor(cur).toLocaleString('id-ID');
+          if (cur >= target) clearInterval(t);
+        }, 25);
+      });
+    });
+  }, { threshold: 0.4 });
+  const cSec = document.getElementById('tm-counter');
+  if (cSec) cObs.observe(cSec);
+
+  /* Contact form */
+  document.getElementById('tmContactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name    = document.getElementById('tmName');
+    const email   = document.getElementById('tmEmail');
+    const subject = document.getElementById('tmSubject');
+    const msg     = document.getElementById('tmMsg');
+    let ok = true;
+    [name, email, subject, msg].forEach(el => el.classList.remove('is-invalid'));
+    if (!name.value.trim())                                { name.classList.add('is-invalid');    ok = false; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) { email.classList.add('is-invalid');   ok = false; }
+    if (!subject.value)                                    { subject.classList.add('is-invalid'); ok = false; }
+    if (!msg.value.trim())                                 { msg.classList.add('is-invalid');     ok = false; }
+    if (ok) {
+      const btn = this.querySelector('.tm-btn-submit');
+      btn.textContent = 'Mengirim...'; btn.disabled = true;
+      setTimeout(() => {
+        this.reset();
+        btn.textContent = 'Kirim Pesan'; btn.disabled = false;
+        const s = document.getElementById('tmFormOk');
+        s.style.display = 'block';
+        setTimeout(() => s.style.display = 'none', 4000);
+      }, 1000);
+    }
+  });
+
+  /* Newsletter */
+  document.getElementById('tmNlBtn').addEventListener('click', () => {
+    const inp = document.getElementById('tmNlEmail');
+    const btn = document.getElementById('tmNlBtn');
+    if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inp.value)) {
+      btn.textContent = '✓ OK!';
+      inp.value = '';
+      setTimeout(() => btn.textContent = 'Daftar', 2500);
+    } else {
+      inp.style.outline = '2px solid red';
+      setTimeout(() => inp.style.outline = '', 1500);
+    }
+  });
+</script>
+
+</body>
+</html>
