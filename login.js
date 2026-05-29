@@ -25,7 +25,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
             localStorage.setItem("username", username);
             
             // Pindah ke halaman utama
-            window.location.href = "../index.html";
+            window.location.href = "index.html";
             
         } else {
             // Jika username/password tidak cocok dengan akun simulasi
