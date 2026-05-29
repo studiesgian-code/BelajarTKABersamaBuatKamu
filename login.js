@@ -1,77 +1,51 @@
-document.getElementById("loginForm").addEventListener("submit", async function(e) {
+document.getElementById("loginForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    // 1. Ambil elemen tombol dan spinner
     const btnText = document.getElementById('btnText');
     const btnSpinner = document.getElementById('btnSpinner');
-    const submitBtn = document.querySelector('.btn-login'); // Diperbaiki agar langsung mencari class tombol
+    const submitBtn = document.querySelector('.btn-login');
 
-    // 2. Aktifkan efek loading
+    // Aktifkan efek loading
     if (btnText && btnSpinner) {
         btnText.style.display = 'none';
         btnSpinner.style.display = 'inline';
     }
-    if (submitBtn) {
-        submitBtn.disabled = true;
-    }
+    if (submitBtn) submitBtn.disabled = true;
 
     const username = document.getElementById("username").value.trim();
     const password = document.getElementById("password").value.trim();
 
-    // Fungsi pembantu untuk mengembalikan tombol ke awal
-    function resetButton() {
-        if (btnText && btnSpinner) {
-            btnText.style.display = 'inline';
-            btnSpinner.style.display = 'none';
-        }
-        if (submitBtn) {
-            submitBtn.disabled = false;
-        }
-    }
-
-    // Fungsi pembantu untuk memunculkan pesan error
-    function showError(message) {
-        const alertBox = document.getElementById("alertBox");
-        if (alertBox) {
-            alertBox.innerText = message;
-            alertBox.className = "alert alert-danger text-center mb-3"; 
-            alertBox.style.display = "block";
-
-            setTimeout(() => {
-                alertBox.style.display = "none";
-            }, 4000);
-        } else {
-            // Cadangan jika alertBox html tidak terbaca
-            alert(message);
-        }
-    }
-
-    try {
-        const res = await fetch("https://herisusanta.my.id/javalogin/api/auth.php", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/x-www-form-urlencoded"
-            },
-            body: `action=login&username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`
-        });
-
-        // Cek jika status HTTP bukan 200 OK
-        if (!res.ok) {
-            throw new Error(`Server bermasalah (Status: ${res.status})`);
-        }
-
-        const data = await res.json();
-
-        if (data.status === "success") {
-            localStorage.setItem("username", data.username);
+    // Simulasi jeda loading seolah-olah menembak server selama 1 detik
+    setTimeout(() => {
+        // KAMU BISA MENENTUKAN USERNAME & PASSWORD BEBAS DI SINI UNTUK DEMO
+        // Contoh: username "admin" dan password "12345" atau akun apa saja
+        if (username === "admin" && password === "12345") {
+            
+            // Simpan username ke localStorage agar terbaca di halaman utama (welcome.js)
+            localStorage.setItem("username", username);
+            
+            // Pindah ke halaman utama
             window.location.href = "../index.html";
+            
         } else {
-            showError("Username atau Password salah, silakan coba lagi");
-            resetButton();
+            // Jika username/password tidak cocok dengan akun simulasi
+            const alertBox = document.getElementById("alertBox");
+            if (alertBox) {
+                alertBox.innerText = "Username atau Password salah (Gunakan admin/12345)";
+                alertBox.className = "alert alert-danger text-center mb-3"; 
+                alertBox.style.display = "block";
+
+                setTimeout(() => {
+                    alertBox.style.display = "none";
+                }, 4000);
+            }
+
+            // Kembalikan tombol ke semula
+            if (btnText && btnSpinner) {
+                btnText.style.display = 'inline';
+                btnSpinner.style.display = 'none';
+            }
+            if (submitBtn) submitBtn.disabled = false;
         }
-    } catch (error) {
-        console.error("Detail Error:", error);
-        showError("Gagal terhubung ke server atau API mati. Silakan periksa koneksi atau console (F12).");
-        resetButton(); // Memastikan tombol "Memuat..." berganti kembali jadi "Masuk" jika jaringan error
-    }
+    }, 1200);
 });
